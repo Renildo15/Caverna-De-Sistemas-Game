@@ -19,7 +19,7 @@ dist_aggro = 100;
 dist_desaggro = 10;
 
 //combate
-vida = 10;
+vida = 20;
 empurrar_dir = 0;
 empurrar_veloc = 0;
 hit = false

@@ -6,6 +6,7 @@ if hit == true{
 	gpu_set_fog(false,c_white,0,0);
 	
 }else{
+	draw_sprite(spr_personagem_sombra,0,x,y+15);
 	draw_self();
 	if machucado == true{
 		yy++;

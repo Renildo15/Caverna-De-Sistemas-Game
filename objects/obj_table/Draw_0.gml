@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+draw_sprite(spr_mesa_sombra,0,x+15,y+28);
+draw_self();
 
-if(index == 0){
-	room_goto_next();
-}else if(index==3){
-	game_end();
-}
 
