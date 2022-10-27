@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_inimigo_3",
   "spriteId": {
-    "name": "spr_slime_andando_strip6",
-    "path": "sprites/spr_slime_andando_strip6/spr_slime_andando_strip6.yy",
+    "name": "spr_inimigo_3",
+    "path": "sprites/spr_inimigo_3/spr_inimigo_3.yy",
   },
   "solid": false,
   "visible": true,
