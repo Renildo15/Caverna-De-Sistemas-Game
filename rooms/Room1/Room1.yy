@@ -227,7 +227,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E592FE1","properties":[],"isDnd":false,"objectId":{"name":"obj_coins","path":"objects/obj_coins/obj_coins.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1160.0397,"y":193.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1528D034","properties":[],"isDnd":false,"objectId":{"name":"obj_coins","path":"objects/obj_coins/obj_coins.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1211.5397,"y":193.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CCE4C03","properties":[],"isDnd":false,"objectId":{"name":"obj_coins","path":"objects/obj_coins/obj_coins.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1194.5397,"y":193.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E05FDC2","properties":[],"isDnd":false,"objectId":{"name":"obj_horas","path":"objects/obj_horas/obj_horas.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":76.0,"y":112.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EC29DB3","properties":[],"isDnd":false,"objectId":{"name":"obj_degrau","path":"objects/obj_degrau/obj_degrau.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":98.0,"y":682.0,},
@@ -671,7 +670,6 @@
     {"name":"inst_2E592FE1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1528D034","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1CCE4C03","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_4E05FDC2","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
