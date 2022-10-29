@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-musica = audio_play_sound(snd_battle_random,1,true);
-audio_stop_sound(snd_menu);
+draw_sprite(spr_horas_sombra,0,x-8, y+8);
+draw_self();
