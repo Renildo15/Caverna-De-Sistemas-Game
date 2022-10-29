@@ -31,6 +31,7 @@
     {"id":{"name":"spr_hitbox","path":"sprites/spr_hitbox/spr_hitbox.yy",},"order":20,},
     {"id":{"name":"obj_busto","path":"objects/obj_busto/obj_busto.yy",},"order":1,},
     {"id":{"name":"spr_degrau_2","path":"sprites/spr_degrau_2/spr_degrau_2.yy",},"order":1,},
+    {"id":{"name":"snd_menu","path":"sounds/snd_menu/snd_menu.yy",},"order":3,},
     {"id":{"name":"spr_personagem_parado_direita_strip6","path":"sprites/spr_personagem_parado_direita_strip6/spr_personagem_parado_direita_strip6.yy",},"order":2,},
     {"id":{"name":"t_ground","path":"tilesets/t_ground/t_ground.yy",},"order":0,},
     {"id":{"name":"obj_degrau_3","path":"objects/obj_degrau_3/obj_degrau_3.yy",},"order":5,},
