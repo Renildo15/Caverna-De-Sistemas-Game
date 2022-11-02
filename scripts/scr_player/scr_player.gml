@@ -22,10 +22,11 @@ function scr_player_colisao(){
 	
 }
 function scr_player_andando(){
-	direita = keyboard_check(ord("D"));
-	cima = keyboard_check(ord("W"));
-	esquerda = keyboard_check(ord("A"));
-	baixo = keyboard_check(ord("S"));
+	gamepad_set_axis_deadzone(global.controle, 0.25);
+	direita = keyboard_check(ord("D")) or gamepad_axis_value(global.controle, gp_axislh) > 0.25;
+	cima = keyboard_check(ord("W")) or gamepad_axis_value(global.controle, gp_axislv) < -0.25;
+	esquerda = keyboard_check(ord("A")) or gamepad_axis_value(global.controle, gp_axislh) < -0.25;
+	baixo = keyboard_check(ord("S")) or gamepad_axis_value(global.controle, gp_axislv) > 0.25;
 	hvelocidade = (direita - esquerda) * velocidade;
 	vvelocidade = (baixo - cima) * velocidade;
 	
@@ -34,8 +35,14 @@ function scr_player_andando(){
 		
 
 	//// trocar sprites
-
-	dir = floor((point_direction(x, y, mouse_x, mouse_y)+45)/90);
+	if gamepad_is_connected(global.controle){
+		if gamepad_axis_value(global.controle, gp_axislh) != 0 or gamepad_axis_value(global.controle, gp_axislv){
+			dir = floor((point_direction(x, y, x + gamepad_axis_value(global.controle, gp_axislh), y + gamepad_axis_value(global.controle, gp_axislv))+45)/90);
+		}
+	}else{
+		dir = floor((point_direction(x, y, mouse_x, mouse_y)+45)/90);
+	}
+	
 	if (hvelocidade == 0 and vvelocidade == 0){
 		switch dir{
 			default:
@@ -74,18 +81,24 @@ function scr_player_andando(){
 	
 	
 	if estamina >= 10 {
-		if mouse_check_button_pressed(mb_right){
+		if mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(global.controle, gp_shoulderr){
 			estamina -= 10;
 			alarm[1] = 180;
 			
 			alarm[0] = 8;
-			dash_dir = point_direction(x, y, mouse_x, mouse_y)
+			if gamepad_is_connected(global.controle){
+				if gamepad_axis_value(global.controle, gp_axislh) != 0 or gamepad_axis_value(global.controle, gp_axislv){
+					dash_dir = point_direction(x, y, x + gamepad_axis_value(global.controle, gp_axislh), y + gamepad_axis_value(global.controle, gp_axislv));
+				}
+			}else{
+				dash_dir = point_direction(x, y, mouse_x, mouse_y);
+			}
 			estado = scr_dash;
 		
 		}
 	}
 	
-	if mouse_check_button_pressed(mb_left){
+	if mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(global.controle, gp_face2){
 		image_index = 0;
 		switch dir {
 			default:
@@ -167,7 +180,7 @@ function scr_player_hit(){
 }
 
 function scr_player_habilidades(){
-	if keyboard_check_pressed(vk_space) and global.habi_01_qtn > 0{
+	if keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(global.controle, gp_face1) and global.habi_01_qtn > 0{
 		switch dir{
 			default:
 				instance_create_layer( x+ 20, y-8, "instances", obj_habilidade_1);
