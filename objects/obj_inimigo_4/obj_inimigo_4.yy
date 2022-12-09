@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_inimigo_4",
   "spriteId": {
-    "name": "spr_inimigo_4",
-    "path": "sprites/spr_inimigo_4/spr_inimigo_4.yy",
+    "name": "spr_enemy_p_strip6",
+    "path": "sprites/spr_enemy_p_strip6/spr_enemy_p_strip6.yy",
   },
   "solid": false,
   "visible": true,
