@@ -60,6 +60,7 @@ function scr_inimigo_perseguindo(){
 }
 
 function scr_inimigo_hit(){
+
 	empurrar_veloc = lerp(empurrar_veloc, 0, 0.05);
 	hvelocidade = lengthdir_x(empurrar_veloc, empurrar_dir);
 	vvelocidade = lengthdir_y(empurrar_veloc, empurrar_dir);

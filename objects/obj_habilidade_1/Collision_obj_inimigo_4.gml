@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+audio_play_sound(snd_dano,0,false);
+audio_play_sound(snd_grito,0,false);
 other.vida -= habi_01_dano;
 other.machucado = true;
 other.dano = habi_01_dano;

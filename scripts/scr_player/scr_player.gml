@@ -143,18 +143,22 @@ function scr_player_atacando(){
 			switch dir{
 				default:
 					instance_create_layer(x + 10, y, "Instances", obj_hitbox);
+					audio_play_sound(snd_punch,0,false)
 					break;
 			
 				case 1:
 					instance_create_layer(x, y - 10, "Instances", obj_hitbox);
+					audio_play_sound(snd_punch,0,false)
 					break;
 			
 				case 2:
 					instance_create_layer(x - 10, y, "Instances", obj_hitbox);
+					audio_play_sound(snd_punch,0,false)
 					break;
 			
 				case 3:
 					instance_create_layer(x, y + 10, "Instances", obj_hitbox);
+					audio_play_sound(snd_punch,0,false)
 					break;
 			}
 			atacar = true;
@@ -169,6 +173,7 @@ function scr_player_atacando(){
 
 function scr_player_hit(){
 	if alarm[2] > 0{
+		
 		hvelocidade = lengthdir_x(3,empurrar_dir);
 		vvelocidade = lengthdir_y(3, empurrar_dir);
 	
@@ -181,6 +186,7 @@ function scr_player_hit(){
 
 function scr_player_habilidades(){
 	if keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(global.controle, gp_face1) and global.habi_01_qtn > 0{
+		audio_play_sound(snd_hab,0,false)
 		switch dir{
 			default:
 				instance_create_layer( x+ 20, y-8, "instances", obj_habilidade_1);
@@ -205,7 +211,7 @@ function scr_player_habilidades(){
 				global.habi_01_qtn-=1;
 				break;
 			case 3:
-			instance_create_layer(x, y+16, "instances", obj_habilidade_1);
+				instance_create_layer(x, y+16, "instances", obj_habilidade_1);
 				obj_habilidade_1.direction = 270;
 				obj_habilidade_1.image_angle = 270;
 				obj_habilidade_1.speed = 5;
