@@ -36,7 +36,7 @@ function scr_player_andando(){
 
 	//// trocar sprites
 	if gamepad_is_connected(global.controle){
-		if gamepad_axis_value(global.controle, gp_axislh) != 0 or gamepad_axis_value(global.controle, gp_axislv){
+		if gamepad_axis_value(global.controle, gp_axislh) != 0 or gamepad_axis_value(global.controle, gp_axislv) != 0{
 			dir = floor((point_direction(x, y, x + gamepad_axis_value(global.controle, gp_axislh), y + gamepad_axis_value(global.controle, gp_axislv))+45)/90);
 		}
 	}else{
@@ -79,7 +79,7 @@ function scr_player_andando(){
 		}
 	}
 	
-	
+	//Dash
 	if estamina >= 10 {
 		if mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(global.controle, gp_shoulderr){
 			estamina -= 10;
@@ -87,7 +87,7 @@ function scr_player_andando(){
 			
 			alarm[0] = 8;
 			if gamepad_is_connected(global.controle){
-				if gamepad_axis_value(global.controle, gp_axislh) != 0 or gamepad_axis_value(global.controle, gp_axislv){
+				if gamepad_axis_value(global.controle, gp_axislh) != 0 or gamepad_axis_value(global.controle, gp_axislv) != 0{
 					dash_dir = point_direction(x, y, x + gamepad_axis_value(global.controle, gp_axislh), y + gamepad_axis_value(global.controle, gp_axislv));
 				}
 			}else{
