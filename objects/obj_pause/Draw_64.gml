@@ -30,21 +30,20 @@ for(var i = 0; i < op_max; i++){
 		if(mouse_check_button_pressed(mb_left)){
 			switch opcoes[i]{
 				case opcoes[0]://retornar
-				room_goto(Room1);
-				audio_resume_sound(snd_battle_random)
-				break;
+					room_goto(Room1);
+					audio_resume_sound(snd_battle_random)
+					break;
 				
 				case opcoes[1]://menu
-				
-				room_goto(Menu);
-				break;
+					game_restart();
+					break;
 				
 				case opcoes[2]://opções
-				break;
+					break;
 				
 				case opcoes[3]://sair
-				game_end();
-				break;
+					game_end();
+					break;
 			}
 		}
 	}else{

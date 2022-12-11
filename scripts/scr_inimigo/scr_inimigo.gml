@@ -42,20 +42,22 @@ function scr_inimigo_parado(){
 }
 
 function scr_inimigo_perseguindo(){
-	image_speed = 1.5;
-	dest_x = obj_player.x;
-	dest_y = obj_player.y;
+	if (instance_exists(obj_player)){
+		image_speed = 1.5;
+		dest_x = obj_player.x;
+		dest_y = obj_player.y;
 	
-	var _dir = point_direction(x, y, dest_x, dest_y);
-	hvelocidade = lengthdir_x(veloc_persegue, _dir);
-	vvelocidade = lengthdir_y(veloc_persegue, _dir);
+		var _dir = point_direction(x, y, dest_x, dest_y);
+		hvelocidade = lengthdir_x(veloc_persegue, _dir);
+		vvelocidade = lengthdir_y(veloc_persegue, _dir);
 	
-	x += hvelocidade;
-	y += vvelocidade;
+		x += hvelocidade;
+		y += vvelocidade;
 	
-	if distance_to_object(obj_player) >= dist_desaggro{
-		estado = scr_inimigo_escolhe_estado;
-		alarm[0] = irandom_range(120, 240);
+		if distance_to_object(obj_player) >= dist_desaggro{
+			estado = scr_inimigo_escolhe_estado;
+			alarm[0] = irandom_range(120, 240);
+		}
 	}
 }
 
