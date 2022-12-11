@@ -311,6 +311,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_11CAA28E","properties":[],"isDnd":false,"objectId":{"name":"obj_parede3","path":"objects/obj_parede3/obj_parede3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":892.0,"y":-13.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61951AB9","properties":[],"isDnd":false,"objectId":{"name":"obj_parede2","path":"objects/obj_parede2/obj_parede2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":12.5,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":464.0,"y":-13.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EBF6826","properties":[],"isDnd":false,"objectId":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":-13.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40EE83C2","properties":[],"isDnd":false,"objectId":{"name":"obj_op_pause","path":"objects/obj_op_pause/obj_op_pause.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":352.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_3","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EC29DB3","properties":[],"isDnd":false,"objectId":{"name":"obj_degrau","path":"objects/obj_degrau/obj_degrau.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":672.0,},
@@ -702,6 +703,7 @@
     {"name":"inst_11CAA28E","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_61951AB9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_EBF6826","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_40EE83C2","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -709,7 +711,7 @@
     "inheritRoomSettings": false,
     "Width": 1366,
     "Height": 768,
-    "persistent": false,
+    "persistent": true,
   },
   "viewSettings": {
     "inheritViewSettings": false,
