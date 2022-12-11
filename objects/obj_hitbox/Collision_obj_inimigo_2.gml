@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+audio_play_sound(snd_grito,0,false);
 other.vida -= obj_player.dano;
 
 var _dir = point_direction(obj_player.x, obj_player.y, other.x, other.y);

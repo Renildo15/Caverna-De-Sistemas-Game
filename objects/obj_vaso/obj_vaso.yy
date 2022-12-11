@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_vaso",
   "spriteId": {
-    "name": "spr_vaso",
-    "path": "sprites/spr_vaso/spr_vaso.yy",
+    "name": "spr_flores",
+    "path": "sprites/spr_flores/spr_flores.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

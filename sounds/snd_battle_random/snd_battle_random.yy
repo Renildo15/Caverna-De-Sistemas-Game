@@ -4,7 +4,7 @@
   "name": "snd_battle_random",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.91,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 512,
   "sampleRate": 44100,
