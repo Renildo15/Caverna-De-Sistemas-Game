@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_wall",
-  "spriteId": {
-    "name": "spr_chao",
-    "path": "sprites/spr_chao/spr_chao.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

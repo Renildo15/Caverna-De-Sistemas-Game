@@ -5,5 +5,6 @@ index = 0;
 esc = 1;
 
 audio_play_sound(snd_menu,10,true);
+audio_group_load(audiogroup_default);
 
 

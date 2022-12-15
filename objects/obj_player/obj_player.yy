@@ -51,6 +51,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_transicao_b","path":"objects/obj_transicao_b/obj_transicao_b.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_python","path":"objects/obj_python/obj_python.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_cantina","path":"objects/obj_cantina/obj_cantina.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_vaso","path":"objects/obj_vaso/obj_vaso.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
